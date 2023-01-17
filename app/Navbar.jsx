@@ -24,7 +24,7 @@ function Navbar() {
 
   return (
     <div
-      className={`w-full py-5 px-4 cursor-pointer  fixed top-0 duration-300 left-0 z-10 ${
+      className={`w-full py-5 px-4 cursor-pointer  fixed top-0 duration-300 left-0 z-10 font-IransansMD ${
         scrolled
           ? "backdrop-blur-lg bg-white/70 text-neutral-900 drop-shadow-lg"
           : " text-neutral-100"
@@ -41,7 +41,7 @@ function Navbar() {
               return (
                 <li className="text-xl mx-5" key={index}>
                   <Link
-                    className={`relative linenav ${
+                    className={`relative linenav font-IransansMD ${
                       scrolled ? "after:bg-amber-700 " : "after:bg-white"
                     } `}
                     activeClass="active"
@@ -85,7 +85,7 @@ function Navbar() {
               return (
                 <li key={index} className="text-lg my-3">
                   <Link
-                    className={`relative linenav ${
+                    className={`relative linenav font-IransansMD ${
                       scrolled ? "after:bg-black " : "after:bg-white"
                     } `}
                     activeClass="active"

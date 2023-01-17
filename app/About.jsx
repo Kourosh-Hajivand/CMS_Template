@@ -14,7 +14,7 @@ async function About() {
           <h4 className="text-2xl text-amber-700 font-IransansBold mb-5">
             درباره محصولات ما
           </h4>
-          <h1 className="text-5xl font-Iransansblack text-neutral-800 mb-6">
+          <h1 className="text-4xl lg:text-5xl font-Iransansblack text-neutral-800 mb-6">
             بهترین نوع قهوه
           </h1>
           <div className="w-full justify-start items-start flex flex-col space-y-16 my-6">

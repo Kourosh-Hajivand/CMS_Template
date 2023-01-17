@@ -2,7 +2,7 @@ import GlobalNavbar from "../../components/GlobalNavbar";
 import Image from "next/image";
 import blogbg from "../../public/MenuTopBg.jpg";
 import Footer from "../../app/Footer";
-export default function BlogLayout({ children }) {
+export default function BlogLayout({ children, ...rest }) {
   return (
     <body className="font-IransansMD">
       <header>

@@ -67,7 +67,7 @@ function Blog() {
   const data = Maindata.slice(0, 3);
 
   return (
-    <div className="w-full min-h-screen bg-gray-100 flex flex-col px-10 py-28 items-center justify-start ">
+    <div className="w-full min-h-screen bg-gray-100 overflow-x-hidden flex flex-col px-10 py-28 items-center justify-start ">
       <div className="text-center">
         <h4 className="text-2xl text-amber-700 font-IransansBold mb-5">
           اخرین بلاگ ها
@@ -76,7 +76,7 @@ function Blog() {
           با ما بهترین باشید
         </h1>
       </div>
-      <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-10 mx-8 ">
+      <div className="w-full grid md:grid-cols-2 lg:grid-cols-3 gap-5 max-w-[1250px] ">
         {data.map((item, index) => {
           return (
             <div
@@ -112,8 +112,8 @@ function Blog() {
       <Link
         href={"/Blog"}
         alt="blog"
-        scroll={false}
-        className="px-6 py-2 w-1/2 max-w-[300px]"
+        scroll={true}
+        className=" w-full max-w-[300px]"
       >
         <button className=" px-6 py-2 border border-amber-700 w-full mx-auto rounded mt-10 duration-300 text-amber-700 hover:bg-amber-700 hover:text-neutral-50 hover:drop-shadow-lg ">
           بیشتر...

@@ -6,7 +6,7 @@ import Menu from "./Menu";
 import Navbar from "./Navbar";
 export default function Home() {
   return (
-    <div>
+    <div className="font-IransansMD overflow-x-hidden">
       <header>
         <Navbar />
       </header>
@@ -14,7 +14,7 @@ export default function Home() {
         <section id="خانه">
           <Hero />
         </section>
-        <section className="درباره ما">
+        <section id="درباره ما">
           <About />
         </section>
         <section id="منو">

@@ -1,12 +1,10 @@
 "use client";
 import "./globals.css";
-
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, ...rest }) {
   useEffect(() => {
-    AOS.init();
     AOS.init({
       disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
       startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
@@ -25,14 +23,11 @@ export default function RootLayout({ children }) {
       mirror: false, // whether elements should animate out while scrolling past them
       anchorPlacement: "top", // defines which position of the element regarding to window should trigger the animation
     });
+    AOS.init();
   }, []);
 
   return (
     <html lang="fa" dir="rtl">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.jsx. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
       <head />
       <body className="font-IransansMD">{children}</body>
     </html>

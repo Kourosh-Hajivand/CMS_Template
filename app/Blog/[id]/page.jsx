@@ -119,7 +119,7 @@ function Page({ params }) {
             <p className="text-gray-500">{founded.date}</p>
           </div>
           <div className="px-6 my-4 text-center">
-            <p className=" text-gray-700">{founded.discription}</p>
+            <p className=" text-gray-700 text-right">{founded.discription}</p>
           </div>
         </div>
       </div>

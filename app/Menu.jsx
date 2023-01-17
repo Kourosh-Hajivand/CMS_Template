@@ -50,7 +50,7 @@ async function Menu() {
           <h4 className="text-2xl text-amber-700 font-IransansBold mb-5">
             وقت قهوه هست
           </h4>
-          <h1 className="text-4xl font-Iransansblack text-neutral-800 mb-6">
+          <h1 className="text-3xl lg:text-4xl font-Iransansblack text-neutral-800 mb-6">
             ما بهترین ها رو داریم
           </h1>
           <div className="w-full flex flex-col space-y-10 my-6 px-2 lg:px-6">
@@ -77,7 +77,7 @@ async function Menu() {
             href={"/Menu"}
             alt="blog"
             scroll={false}
-            className="px-6 py-2 w-1/2 max-w-[300px] mx-auto"
+            className="w-full max-w-[300px] mx-auto"
           >
             <button className=" px-6 py-2 border border-amber-700 w-full mx-auto rounded mt-10 duration-300 text-amber-700 hover:bg-amber-700 hover:text-neutral-50 hover:drop-shadow-lg ">
               بیشتر...
